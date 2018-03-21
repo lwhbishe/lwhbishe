@@ -1,0 +1,187 @@
+.myOrder-top{
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    top:48px;
+    height: 48px;
+    /*background-color: rgba(255,255,255,0.6);*/
+    background-color: #fff;
+    overflow: hidden;
+    border-top: 1px solid #ccc;
+}
+.orderContainer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:48px;
+    overflow: hidden;
+    border-top: 1px solid #ccc;
+    overflow-y: auto;
+}
+/*.myOrder-left{*/
+    /*width:25%;*/
+    /*height: 48px;*/
+    /*color: #2E85CC;*/
+    /*text-align: center;*/
+    /*line-height: 48px;*/
+    /*border-bottom: 1px solid #2E85CC;*/
+    /*box-sizing: border-box;*/
+    /*float: left;*/
+/*}*/
+.active{
+    width:25%;
+    height: 48px;
+    color: #2E85CC;
+    text-align: center;
+    line-height: 48px;
+    border-bottom: 1px solid #2E85CC;
+    box-sizing: border-box;
+    float: left;
+}
+.inActive{
+    width:25%;
+    height: 48px;
+    color: #2E85CC;
+    text-align: center;
+    line-height: 48px;
+    box-sizing: border-box;
+    float: left;
+}
+/*.myOrder-mid1{*/
+    /*width:25%;*/
+    /*height: 48px;*/
+    /*color: #2E85CC;*/
+    /*text-align: center;*/
+    /*line-height: 48px;*/
+    /*box-sizing: border-box;*/
+    /*float: left;*/
+/*}*/
+/*.myOrder-right1{*/
+    /*width:25%;*/
+    /*height: 48px;*/
+    /*color: #2E85CC;*/
+    /*text-align: center;*/
+    /*line-height: 48px;*/
+    /*box-sizing: border-box;*/
+    /*float: left;*/
+/*}*/
+/*.myOrder-right{*/
+    /*width:25%;*/
+    /*height: 48px;*/
+    /*color: #2E85CC;*/
+    /*text-align: center;*/
+    /*line-height: 48px;*/
+    /*box-sizing: border-box;*/
+    /*float: left;*/
+/*}*/
+.myOrder-mid{
+    width:100%;
+    height: 250px;
+    background-color: rgba(255,255,255,0.8);
+    margin-top: 20px;
+}
+.myOrder-mid-top{
+    width:95%;
+    height: 48px;
+    margin:auto;
+    border-bottom: 1px solid #ccc;
+}
+.state{
+    display: block;
+    height: 48px;
+    line-height: 48px;
+    float: left;
+    color: #2E85CC;
+}
+.borrowNumber{
+    display: block;
+    width: 200px;
+    height: 48px;
+    line-height: 48px;
+    float: right;
+    color: #2E85CC;
+    overflow: hidden;
+}
+.myOrder-mid-body{
+    width:95%;
+    height: 130px;
+    margin:auto;
+    border-bottom: 1px solid #ccc;
+}
+.myOrder-mid-body>img{
+    display: block;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 100px;
+    height: 110px;
+    background-color: #ccc;
+    float: left;
+}
+.myOrder-mid-container{
+    margin-top: 10px;
+    margin-left: 20px;
+    overflow: hidden;
+    width: 185px;
+    height: 110px;
+    /* background-color: #ccc; */
+    float: left;
+    color: #2E85CC;
+}
+.myOrder-mid-container>p{
+    padding-top: 12px;
+}
+.myOrder-mid-body>i{
+    font-size: 24px;
+    float: right;
+    display: block;
+    width: 30px;
+    height: 130px;
+    line-height: 130px;
+    color: #999;
+}
+.myOrder-mid-bottom{
+    width: 95%;
+    height: 48px;
+    margin:auto;
+    border-bottom: 1px solid #ccc;
+}
+.btnConfirm{
+    display: block;
+    width:60px;
+    height: 40px;
+    line-height: 40px;
+    float: right;
+    color: #fff;
+    background-color: #2E85CC;
+    margin-right: 10px;
+    text-align: center;
+    margin-top: 4px;
+    border-radius: 8px;
+}
+.btnCancel{
+    display: block;
+    width:60px;
+    height: 40px;
+    line-height: 40px;
+    float: right;
+    color: #fff;
+    background-color: #FE9600;
+    margin-right: 10px;
+    text-align: center;
+    margin-top: 4px;
+    border-radius: 8px;
+}
+.btndetelD{
+    display: block;
+    width:60px;
+    height: 40px;
+    line-height: 40px;
+    float: right;
+    color: #fff;
+    background-color: #EA2000;
+    margin-right: 10px;
+    text-align: center;
+    margin-top: 4px;
+    border-radius: 8px;
+}

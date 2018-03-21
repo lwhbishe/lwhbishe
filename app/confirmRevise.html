@@ -1,0 +1,25 @@
+<div>
+    <div class="page-headers">
+        <a href="#" onclick="javascript :history.back(-1);" class="fa fa-chevron-left"></a>
+        <span>重置密码</span>
+    </div>
+    <div class="page-body">
+        <form name="frm" novalidate>
+            <div class="login-user">
+                <i class="fa fa-unlock-alt"></i>
+                <input type="password" placeholder="请输入新密码" name="revisePassword" ng-model="reviseReader.password" required pattern="\d{4}$"/>
+                <label ng-show="frm.revisePassword.$dirty&&frm.revisePassword.$invalid">
+                    <span ng-show="frm.revisePassword.$error.required" style="color: red;">密码不能为空</span>
+                    <span ng-show="frm.revisePassword.$error.pattern" style="color: red;">密码必须为四位数字</span>
+                </label>
+            </div>
+            <div class="login-password">
+                <i class="fa fa-unlock-alt"></i>
+                <input type="password" name="confrim"  placeholder="请输入确认密码" ng-model="reviseReader.confrim"/>
+                <label ng-show="frm.confrim.$dirty&&reviseReader.password!=reviseReader.confrim" style="color:red;">两次密码不一致</label>
+            </div>
+            <button class="tijiao" style="background-color: red;width:95%;height: 50px;margin:auto;display: block;color:#fff;border: 0;"  type="button" ng-click="confirmRevise()">提交</button>
+        </form>
+
+    </div>
+</div>

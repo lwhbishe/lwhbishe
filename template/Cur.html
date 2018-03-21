@@ -1,0 +1,13 @@
+<div class="page-home-curRecommends">
+    <div class="cur" ng-click="goLibList(section)">
+        <h3>{{section.Name}}</h3>
+        <i class="fa fa-arrow-right"></i>
+    </div>
+
+    <div class="pic" >
+        <div ng-repeat="item in section.Books" ng-click="goDetail(item);">
+            <img ng-src="{{item.Image}}" alt=""/>
+            <span>{{item.bookName}}</span>
+        </div>
+    </div>
+</div>

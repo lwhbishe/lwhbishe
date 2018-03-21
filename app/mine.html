@@ -1,0 +1,54 @@
+<div>
+    <div class="page-headers">
+        <a href="index.html"  class="fa fa-chevron-left"></a>
+        <span>个人中心</span>
+    </div>
+    <div class="page-body">
+        <div class="mine-top">
+            <div ng-if="!isLogin" class="mine-user" ng-click="goLogin()">
+                <img src="images/usered.png" alt=""/>
+                <p>尚未登录</p>
+            </div>
+            <div ng-if="isLogin" class="mine-login-user" ng-click="goLogout()">
+                <img ng-src="{{reader.Header}}" alt=""/>
+                <p>{{reader.Name}}</p>
+
+            </div>
+        </div>
+        <div class="mine-mid">
+            <div class="mine-first" ng-click="goMyCart()">
+                <img src="images/bookcase1.png" alt=""/>
+                <span>我的借书架</span>
+                <i class="fa fa-angle-right"></i>
+            </div>
+            <div class="mine-first" ng-click="goMyOrder()">
+                <img src="images/book.png" alt=""/>
+                <span>我的借阅</span>
+                <i class="fa fa-angle-right"></i>
+            </div>
+            <div class="mine-second">
+                <img src="images/address.png" alt=""/>
+                <span>我的地址</span>
+                <i class="fa fa-angle-right"></i>
+            </div>
+        </div>
+        <div class="mine-bottom">
+            <div class="mine-first" ng-click="goMyBack()">
+                <img src="images/fankui.png" alt=""/>
+                <span>软件反馈</span>
+                <i class="fa fa-angle-right"></i>
+            </div>
+            <div class="mine-first" ng-click="goQuestion()">
+                <img src="images/question.png" alt=""/>
+                <span>常见问题</span>
+                <i class="fa fa-angle-right"></i>
+            </div>
+            <div class="mine-second" ng-click="goAboutUs()">
+                <img src="images/about.png" alt=""/>
+                <span>关于软件</span>
+                <i class="fa fa-angle-right"></i>
+            </div>
+        </div>
+    </div>
+    <!--<page-nav title="3"></page-nav>-->
+</div>

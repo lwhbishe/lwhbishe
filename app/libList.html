@@ -1,0 +1,11 @@
+<div>
+    <div class="page-headers">
+        <a href="#" onclick="javascript :history.back(-1);" class="fa fa-chevron-left"></a>
+        <span>图书列表</span>
+    </div>
+    <div class="page-body">
+        <lwh-liblist  ng-repeat="item in books" list="item"></lwh-liblist>
+        <p id="noMessage" >抱歉!该栏目目前没有您想看的图书，您可以看看<a href="#/sort">其他</a></p>
+
+    </div>
+</div>

@@ -1,0 +1,20 @@
+.sort-item{
+    width:50%;
+    height: 160px;
+    float: left;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.sort-item>img{
+    display: block;
+    margin:10px auto;
+    width:60%;
+}
+.sort-item>span{
+    display: block;
+    width:100%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #2E85CC;
+}

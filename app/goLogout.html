@@ -1,0 +1,45 @@
+<div>
+    <div class="page-headers">
+        <a href="#" onclick="javascript :history.back(-1);" class="fa fa-chevron-left"></a>
+        <span>个人中心</span>
+    </div>
+    <div class="page-body">
+        <div class="mine-top">
+            <div class="mine-login-user ng-scope">
+                <img src="images/1111.jpg" alt="" style="border-radius: 50%;"/>
+                <p>黎文浩</p>
+            </div>
+        </div>
+        <div class="logout-mid">
+            <div class="logout-first">
+                <img src="images/bookcase1.png" alt="">
+                <span>昵称</span>
+                <span>昵称是什么</span>
+            </div>
+            <div class="logout-first">
+                <img src="images/book.png" alt="">
+                <span>性别</span>
+                <span>男</span>
+            </div>
+            <div class="logout-first">
+                <img src="images/address.png" alt="">
+                <span>手机</span>
+                <span>18852921836</span>
+            </div>
+            <div class="logout-first">
+                <img src="images/address.png" alt="">
+                <span>邮箱</span>
+                <span>1206699020@qq.com</span>
+            </div>
+            <div class="logout-first1">
+                <img src="images/address.png" alt="">
+                <span>个性签名</span>
+                <div>个性签名耶!</div>
+            </div>
+        </div>
+    </div>
+    <div class="page-bottom">
+        <button class="logout" ng-click="logout();">注销</button>
+    </div>
+    <lwh-alert-del content="您确定要注销吗?" state1="logoutName" onconfirm="confirmLogout()" oncancel="cancelLogout()"></lwh-alert-del>
+</div>

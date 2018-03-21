@@ -1,0 +1,44 @@
+<div>
+    <div class="page-headers">
+        <a href="#" onclick="javascript :history.back(-1);" class="fa fa-chevron-left"></a>
+        <span>我的借书架</span>
+    </div>
+    <div class="page-body">
+        <div class="myCartCon">
+            <div class="myCart-container" ng-repeat="item in myBooks">
+
+                <!--<div class="radio"></div>-->
+                <a href="#/detail/{{item.bookId}}">
+                    <img ng-src="{{item.Images}}" width="128px" alt=""/>
+                </a>
+
+                <div class="myCart-mid">
+                    <p class="myCartName">{{item.bookName}}</p>
+                    <p>{{item.authorName}}</p>
+                    <p>{{item.publishDate}}</p>
+                    <p>{{item.publisherName}}</p>
+                </div>
+                <i class="fa fa-trash-o"  ng-click="removeOne(item)"></i>
+                <!--<lwh-alert-del content="您确定要删除《{{state1.name}}》吗?" state1="confirmState" onconfirm="afterConfirm(item)" oncancel="afterCancel()"></lwh-alert-del>-->
+            </div>
+        </div>
+
+
+    </div>
+    <div class="myCart-bottom">
+        <div class="myCart-bottom-left">
+            <div ng-click="removeAll()">
+                <!--<label for="all" class="allchk"></label>-->
+                <div id="all">删除全部</div>
+            </div>
+            <span>合计：{{length.length}}本</span>
+        </div>
+        <div class="myCart-bottom-right">
+            <span ng-click="goMyOrder1()">提交订单</span>
+        </div>
+    </div>
+
+    <lwh-alert content="您还没有订单哦!" state="orderDefault"></lwh-alert>
+    <lwh-alert-del content="您确定要删除《{{state1.name}}》吗?" state1="confirmState" onconfirm="afterConfirm(state1.bookId)" oncancel="afterCancel()"></lwh-alert-del>
+    <lwh-alert-del content="您确定要删除全部订单吗?" state1="confirmStateAll" onconfirm="afterConfirmAll()" oncancel="afterCancelAll()"></lwh-alert-del>
+</div>

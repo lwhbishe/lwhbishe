@@ -1,0 +1,112 @@
+<div>
+    <div class="page-headers">
+        <a href="#" onclick="javascript :history.back(-1);" class="fa fa-chevron-left"></a>
+        <span>我的订单</span>
+    </div>
+    <div class="page-body">
+        <div class="myOrder-container">
+            <div class="myOrder-top">
+                <div ng-class="{true:'active',false:'inActive'}[isActive1]" ng-click="allOrder()" >全部订单</div>
+                <div ng-class="{true:'active',false:'inActive'}[isActive2]" ng-click="daipeisong()">待配送</div>
+                <div ng-class="{true:'active',false:'inActive'}[isActive3]" ng-click="yiqueren()">配送中</div>
+                <div ng-class="{true:'active',false:'inActive'}[isActive4]" ng-click="yiguihuan()">已归还</div>
+            </div>
+            <div class="orderContainer">
+            <div ng-if="allOrder1" class="myOrder-mid" ng-repeat="item in myOrder |orderBy:'CreateTime':true">
+                <div class="myOrder-mid-top">
+                    <span class="state">状态:{{stateName(item.State)}}</span>
+                    <span class="borrowNumber">订单号:{{item.BorrowNumber}}</span>
+                </div>
+                <a href="#/detail/{{item.BookId}}">
+                    <div class="myOrder-mid-body">
+                        <img ng-src="{{item.BookImage}}" alt=""/>
+                        <div class="myOrder-mid-container">
+                            <p>书名:{{item.BookName}}</p>
+                            <p>作者:{{item.AuthorName}}</p>
+                            <p>出版社:{{item.PublisherName}}</p>
+                        </div>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </a>
+
+                <div class="myOrder-mid-bottom">
+                    <span ng-if="isConfirm" class="btnConfirm" ng-click="ConfrimOrder(item)">{{myOrderConfirm}}</span>
+                    <span ng-if="isCancel" class="btnCancel" ng-click="CancelOrder(item)">{{myOrderCancel}}</span>
+                    <span ng-if="isDelete" class="btndetelD" ng-click="DeleteOrder(item)">{{myOrderDelete}}</span>
+                </div>
+            </div>
+
+
+            <div ng-if="daipeisong1" class="myOrder-mid" ng-repeat="item in newOrder ">
+                <div class="myOrder-mid-top">
+                    <span class="state">状态:{{stateName(item.State)}}</span>
+                    <span class="borrowNumber">订单号:{{item.BorrowNumber}}</span>
+                </div>
+                <a href="#/detail/{{item.BookId}}">
+                    <div class="myOrder-mid-body">
+                        <img ng-src="{{item.BookImage}}" alt=""/>
+                        <div class="myOrder-mid-container">
+                            <p>书名:{{item.BookName}}</p>
+                            <p>作者:{{item.AuthorName}}</p>
+                            <p>出版社:{{item.PublisherName}}</p>
+                        </div>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </a>
+
+                <div class="myOrder-mid-bottom">
+                    <span ng-if="isCancel" class="btnCancel" ng-click="CancelOrder(item)">{{myOrderCancel}}</span>
+                    <span ng-if="isDelete" class="btndetelD" ng-click="DeleteOrder(item)">{{myOrderDelete}}</span>
+                </div>
+            </div>
+
+            <div ng-if="yiqueren1" class="myOrder-mid" ng-repeat="item in newConfrim ">
+                <div class="myOrder-mid-top">
+                    <span class="state">状态:{{stateName(item.State)}}</span>
+                    <span class="borrowNumber">订单号:{{item.BorrowNumber}}</span>
+                </div>
+                <a href="#/detail/{{item.BookId}}">
+                    <div class="myOrder-mid-body">
+                        <img ng-src="{{item.BookImage}}" alt=""/>
+                        <div class="myOrder-mid-container">
+                            <p>书名:{{item.BookName}}</p>
+                            <p>作者:{{item.AuthorName}}</p>
+                            <p>出版社:{{item.PublisherName}}</p>
+                        </div>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </a>
+
+                <div class="myOrder-mid-bottom">
+                    <span ng-if="isConfirm" class="btnConfirm" ng-click="ConfrimOrder(item)">{{myOrderConfirm}}</span>
+                </div>
+            </div>
+
+            <div ng-if="yiguihuan1" class="myOrder-mid" ng-repeat="item in newGui ">
+                <div class="myOrder-mid-top">
+                    <span class="state">状态:{{stateName(item.State)}}</span>
+                    <span class="borrowNumber">订单号:{{item.BorrowNumber}}</span>
+                </div>
+                <a href="#/detail/{{item.BookId}}">
+                    <div class="myOrder-mid-body">
+                        <img ng-src="{{item.BookImage}}" alt=""/>
+                        <div class="myOrder-mid-container">
+                            <p>书名:{{item.BookName}}</p>
+                            <p>作者:{{item.AuthorName}}</p>
+                            <p>出版社:{{item.PublisherName}}</p>
+                        </div>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </a>
+
+                <div class="myOrder-mid-bottom">
+                    <span ng-if="isDelete" class="btndetelD" ng-click="DeleteOrder(item)">{{myOrderDelete}}</span>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="myOrder-bottom">
+
+    </div>
+</div>

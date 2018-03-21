@@ -1,0 +1,26 @@
+<div>
+    <div class="page-headers">
+        <a href="#" onclick="javascript :history.back(-1);" class="fa fa-chevron-left"></a>
+        <span>重置密码</span>
+    </div>
+    <div class="page-body">
+        <form name="frm" novalidate>
+            <div class="login-user">
+                <i class="fa fa-user-circle-o"></i>
+                <input type="text" placeholder="请输入手机号码" ng-model="userMessage.phone" name="phone"  required pattern="1[34578]\d{9}$"/>
+                <label ng-show="frm.phone.$dirty&&frm.phone.$invalid">
+                    <span ng-show="frm.phone.$error.required" style="color: red;">手机号码不能为空</span>
+                    <span ng-show="frm.phone.$error.pattern" style="color: red;">手机格式不正确</span>
+                </label>
+            </div>
+            <div class="login-YZ">
+                <input type="text" placeholder="请输入验证码" ng-model="userMessage.ewm"/>
+                <button class="getYZ" id="getYZ">获取验证码</button>
+            </div>
+            <span id="reviseTisi" >请输入正确的手机号码或者验证码</span>
+            <span id="revisetisi1">请输入正确的手机号码</span>
+            <button class="btnLogin" type="button" ng-click="goConfirmRevise()">下一步</button>
+        </form>
+
+    </div>
+</div>

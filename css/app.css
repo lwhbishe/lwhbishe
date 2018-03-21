@@ -1,0 +1,259 @@
+*{margin:0;padding:0}
+html,body{
+    width:100%;
+    height:100%;
+}
+
+body{
+    font-size:14px;
+    font-family: 'Microsoft YaHei';
+
+}
+
+/*
+    主容器
+*/
+a{
+    text-decoration: none;
+}
+.page-view{
+    /*position:relative;*/
+    width:100%;
+    height:100%;
+    background-image: url("../images/bg.jpg");
+    background-size: 100% 100%;
+    position: fixed;
+}
+
+.page-view>div{
+    width:100%;
+    height:100%;
+}
+
+/**
+    子页
+**/
+.page-headers{
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    height:48px;
+    background-color: #2E85CC;
+    color:#fff;
+
+}
+
+
+/*.page-nav{*/
+    /*position:absolute;*/
+    /*left:0;*/
+    /*right:0;*/
+    /*bottom:0;*/
+    /*height:48px;*/
+    /*background-color: #f0f0f0;*/
+    /*display: flex;*/
+/*}*/
+
+.page-body{
+    position:absolute;
+    top:48px;
+    bottom:0;
+    left:0;
+    right:0;
+    border-top: 1px solid #ccc;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: rgba(255,255,255,0.6);
+}
+
+/*.page-nav>div{*/
+    /*flex:1;*/
+    /*line-height: 48px;*/
+    /*text-align: center;*/
+    /*color: #999;*/
+/*}*/
+/*.page-nav>div>a{*/
+    /*display: block;*/
+    /*text-decoration: none;*/
+    /*color:#999;*/
+    /*font-size:16px;*/
+/*}*/
+/*.page-nav>div>a.actived{*/
+    /*color:#2E85CC;*/
+/*}*/
+
+
+/*.page-container{*/
+    /*position:absolute;*/
+    /*left:0;*/
+    /*right:0;*/
+    /*top:48px;*/
+    /*border-top:1px solid #ccc;*/
+    /*background-color: #2E85CC;*/
+    /*bottom:0;*/
+/*}*/
+
+.yiny{
+    position: absolute;
+    left: 0;
+    top:0;
+    bottom:0;
+    right:0;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.title{
+    width:100%;
+    height: 250px;
+    line-height: 250px;
+    text-align: center;
+    top:48px;
+}
+.home-body{
+    width:90%;
+    height: 300px;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.home-homepage{
+    width:150px;
+    height: 120px;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 8px;
+}
+.home-sort{
+    width:150px;
+    height: 120px;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 8px;
+}
+.home-discover{
+    width:150px;
+    height: 120px;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 8px;
+}
+.home-mine{
+    width:150px;
+    height: 120px;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 8px;
+}
+
+.home-homepage>a{
+    display: block;
+    font-size: 24px;
+    color: #2E85CC;
+}
+
+.home-homepage{
+    text-align: center;
+}
+.home-homepage>div>i{
+    margin-top: 15px;
+    color: #2E85CC;
+    font-size: 26px;
+}
+.cha{
+    font-size: 24px;
+}
+.eng{
+    font-size: 14px;
+    color: #2E85CC;
+}
+
+.home-sort{
+    text-align: center;
+}
+.home-sort>div>i{
+    margin-top: 15px;
+    color: #2E85CC;
+    font-size: 26px;
+}
+.home-sort>a{
+    display: block;
+    font-size: 24px;
+    color: #2E85CC;
+}
+.home-discover{
+    text-align: center;
+}
+.home-discover>div>i{
+    margin-top: 15px;
+    color: #2E85CC;
+    font-size: 26px;
+}
+.home-discover>a{
+    display: block;
+    font-size: 24px;
+    color: #2E85CC;
+}
+.home-mine>div>i{
+    margin-top: 15px;
+    color: #2E85CC;
+    font-size: 26px;
+}
+.home-mine{
+    text-align: center;
+}
+.home-mine>a{
+    display: block;
+    font-size: 24px;
+    color: #2E85CC;
+}
+.wellcome{
+    font-size: 26px;
+    text-align: center;
+    color: #2E85CC;
+}
+.title{
+    font-size: 32px;
+    text-align: center;
+    color: #2E85CC;
+}
+.page-headers>a{
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color:#fff;
+    font-size: 20px;
+}
+.page-headers>div{
+    position: absolute;
+    width:200px;
+    height: 30px;
+    top:50%;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -15px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    background-color: #fff;
+}
+.page-headers>span{
+    position: absolute;
+    width:100px;
+    height: 30px;
+    top:50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -15px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+}
+.search{
+    color:#999;
+}
+.search>i{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    font-size: 20px;
+    color: #2E85CC;
+}

@@ -1,0 +1,12 @@
+<div>
+    <div class="page-headers">
+        <a href="index.html" class="fa fa-chevron-left"></a>
+        <span>分类</span>
+    </div>
+    <div class="page-body">
+        <div class="sort-item" ng-repeat="category in sort">
+            <img ng-src="{{category.Icon}}" alt="" ng-click="goList(category);"/>
+            <span>{{category.Name}}</span>
+        </div>
+    </div>
+</div>

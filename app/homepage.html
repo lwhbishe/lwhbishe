@@ -1,0 +1,16 @@
+<div>
+    <div class="page-headers">
+        <a href="#" onclick="javascript :history.back(-1);" class="fa fa-chevron-left"></a>
+        <div class="search" ng-click="goSearch()"><i class="fa fa-search"></i>请输入图书的名字</div>
+    </div>
+    <div class="page-body">
+        <div class="page-homepage-ad">
+            <img src="" id="ad"/>
+        </div>
+        <lwh-cur ng-repeat="sectionItem in section"  section="sectionItem" ></lwh-cur>
+
+
+
+    </div>
+    <!--<page-nav title="1"></page-nav>-->
+</div>

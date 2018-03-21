@@ -1,0 +1,357 @@
+.mine-top{
+    width:100%;
+    height: 150px;
+    background-color: rgba(255,255,255,0.5);
+}
+.mine-user{
+    width:100px;
+    height: 150px;
+    margin: auto;
+    overflow: hidden;
+}
+.mine-user>img{
+    display: block;
+    margin-top: 10px;
+    width:100px;
+    height: 100px;
+}
+.mine-user>p{
+    text-align: center;
+    color: #2E85CC;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.mine-login-user{
+    width:100px;
+    height: 150px;
+    margin: auto;
+    overflow: hidden;
+}
+.mine-login-user>img{
+    display: block;
+    margin-top: 10px;
+    width:100px;
+    height: 100px;
+}
+.mine-login-user>p{
+    text-align: center;
+    color: #2E85CC;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.mine-mid{
+    width:100%;
+    height: 180px;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background-color: rgba(255,255,255,0.5);
+}
+.mine-first{
+    width:90%;
+    height:60px ;
+    margin:auto;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+.mine-second{
+    width:90%;
+    height:60px ;
+    margin:auto;
+}
+.mine-bottom{
+    width:100%;
+    height: 180px;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background-color: rgba(255,255,255,0.5);
+}
+.mine-first>img{
+    display: block;
+    width:40px;
+    height: 40px;
+    float: left;
+    margin-top: 10px;
+}
+.mine-first>span{
+    display: block;
+    float: left;
+    color: #999;
+    line-height: 60px;
+}
+.mine-first>i{
+    font-size: 24px;
+    float: right;
+    display: block;
+    width: 30px;
+    height: 60px;
+    line-height: 60px;
+    color: #999;
+}
+.mine-second>img{
+    display: block;
+    width:40px;
+    height: 40px;
+    float: left;
+    margin-top: 10px;
+}
+.mine-second>span{
+    display: block;
+    float: left;
+    color: #999;
+    line-height: 60px;
+}
+.mine-second>i{
+    font-size: 24px;
+    float: right;
+    display: block;
+    width: 30px;
+    height: 60px;
+    line-height: 60px;
+    color: #999;
+}
+
+
+/*注销*/
+.logout{
+    display: block;
+    width:100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    background-color: #ff0000;
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+}
+.page-bottom{
+    height: 48px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    border-top: 1px solid #ccc;
+    /*background-color: rgba(255,255,255,0.6);*/
+    /*background-color: black;*/
+}
+
+.logout-mid{
+    width: 100%;
+    height: 385px;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background-color: rgba(255,255,255,0.5);
+}
+.logout-first{
+    width: 90%;
+    height: 40px;
+    margin: auto;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+.logout-first1{
+    width: 90%;
+    height: 220px;
+    margin: auto;
+    overflow: hidden;
+}
+.logout-first>img{
+    display: block;
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-top: 10px;
+}
+.logout-first>span:nth-child(2){
+    display: block;
+    float: left;
+    color: #999;
+    margin-left: 10px;
+    line-height: 40px;
+    width: 80px;
+}
+.logout-first>span:nth-child(3){
+    display: block;
+    float: left;
+    margin-left: 10px;
+    line-height: 40px;
+    width: 80px;
+    color: #2E85CC;
+}
+.logout-first>i {
+    font-size: 24px;
+    float: right;
+    display: block;
+    width: 30px;
+    height: 40px;
+    line-height: 40px;
+    color: #999;
+}
+.logout-first1>img{
+    display: block;
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-top: 10px;
+}
+.logout-first1>span {
+    display: block;
+    float: left;
+    color: #999;
+    margin-left: 10px;
+    line-height: 40px;
+}
+.logout-first1>i {
+    font-size: 24px;
+    float: right;
+    display: block;
+    width: 30px;
+    height: 40px;
+    line-height: 40px;
+    color: #999;
+}
+.logout-first1>div{
+    width:90%;
+    height: 150px;
+    border: 1px dashed #aaa;
+    margin:50px auto;
+    color: #2E85CC;
+}
+
+/*软件反馈*/
+.myBack-top{
+    width:100%;
+    height: 500px;
+}
+.myBack-top>textarea{
+    width:90%;
+    display: block;
+    margin:30px auto;
+    outline: none;
+    border-radius:6px;
+    border: none;
+}
+.myBack-top>input{
+    display: block;
+    margin:30px auto;
+    width:90%;
+    height: 40px;
+    outline: none;
+    border-radius:6px;
+    border: none;
+}
+.submitBack{
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    background-color: #2E85CC;
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+    outline: none;
+}
+/*关于我们*/
+.aboutUs-mid{
+    width: 100%;
+    height: 163px;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background-color: rgba(255,255,255,0.5);
+}
+.aboutUs-first{
+    width: 90%;
+    height: 40px;
+    margin: auto;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+.aboutUs-first1{
+    width: 90%;
+    height: 220px;
+    margin: auto;
+    overflow: hidden;
+}
+.aboutUs-first>img{
+    display: block;
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-top: 10px;
+}
+.aboutUs-first>span {
+    display: block;
+    float: left;
+    color: #999;
+    margin-left: 10px;
+    line-height: 40px;
+}
+.aboutUs-first>i {
+    font-size: 24px;
+    float: right;
+    display: block;
+    width: 30px;
+    height: 40px;
+    line-height: 40px;
+    color: #999;
+}
+.page-bottom>p{
+    font-size: 14px;
+    color:#2E85CC;
+    text-align: center;
+}
+/*常见问题*/
+.question-mid {
+    width: 100%;
+    height: 245px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.question-first{
+    width: 90%;
+    height: 40px;
+    margin: auto;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+.question-first1{
+    width: 90%;
+    height: 220px;
+    margin: auto;
+    overflow: hidden;
+}
+.question-first>img{
+    display: block;
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-top: 10px;
+}
+.question-first>span {
+    display: block;
+    float: left;
+    color: #999;
+    margin-left: 10px;
+    line-height: 40px;
+}
+.question-first>i {
+    font-size: 24px;
+    float: right;
+    display: block;
+    width: 30px;
+    height: 40px;
+    line-height: 40px;
+    color: #999;
+}

@@ -1,0 +1,139 @@
+.login-user{
+    width:95%;
+    height: 35px;
+    border-bottom: 1px solid #2E85CC;
+    margin:50px auto;
+}
+.login-user>i{
+    font-size: 24px;
+    color: #999;
+    line-height: 35px;
+}
+.login-user>input{
+    width: 300px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-left: 20px;
+}
+.login-password{
+    width:95%;
+    height: 35px;
+    border-bottom: 1px solid #2E85CC;
+    margin:50px auto;
+}
+.login-password>i{
+    font-size: 24px;
+    color: #999;
+    line-height: 35px;
+}
+.login-password>input{
+    width: 300px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-left: 20px;
+}
+.forget{
+    width:100%;
+    height: 30px;
+    margin:auto;
+}
+.forget>p:nth-child(2){
+    float: right;
+    margin-right: 10px;
+    color: #2E85CC;
+}
+.forget>p:nth-child(3){
+    float: left;
+    margin-left: 10px;
+    color: #2E85CC;
+}
+.btnLogin{
+    display: block;
+    width:95%;
+    height: 50px;
+    background-color: #2E85CC;
+    margin:auto;
+    color:#fff;
+    border: 0;
+}
+.tijiao{
+    display: block;
+    width:95%;
+    height: 50px;
+    background-color: #2E85CC;
+    margin:auto;
+    color:#fff;
+    border: 0;
+}
+.login-YZ{
+    width:95%;
+    height: 35px;
+    border-bottom: 1px solid #2E85CC;
+    margin:50px auto;
+}
+.login-YZ>input{
+    width:50%;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-left: 20px;
+}
+.getYZ{
+    width:120px;
+    height: 50px;
+    border: 1px solid #2E85CC;
+    color: #2E85CC;
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    top: 110px;
+    background-color: #fff;
+}
+#reviseTisi{
+    position: absolute;
+    top: 190px;
+    left: 10px;
+    display: none;
+    color:red;
+}
+#revisetisi1{
+    position: absolute;
+    top: 190px;
+    left: 10px;
+    display: none;
+    color:red;
+}
+#loginTishi{
+    float: left;
+    margin-left: 10px;
+    margin-top: -20px;
+    display: none;
+    color:red;
+}
+#registerTisi{
+    position: absolute;
+    top: 190px;
+    left: 10px;
+    display: none;
+    color:red;
+}
+#registerTisi1{
+    position: absolute;
+    top: 190px;
+    left: 10px;
+    display: none;
+    color:red;
+}
+#registerTisi2{
+    position: absolute;
+    top: 190px;
+    left: 10px;
+    display: none;
+    color:red;
+}

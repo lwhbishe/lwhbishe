@@ -1,0 +1,52 @@
+<div>
+    <div class="page-headers">
+        <a href="#" onclick="javascript :history.back(-1);" class="fa fa-chevron-left"></a>
+        <span>图书详情</span>
+    </div>
+    <div class="page-body-detail">
+        <div class="detail-body">
+            <div class="detail-image">
+                <img ng-src="{{detail.Images}}" alt=""/>
+            </div>
+            <div class="detail-name">
+                <h3>{{detail.bookName}}</h3>
+            </div>
+            <div class="detail-message">
+                <div>
+                    <label>作者:</label>
+                    <span>{{detail.authorName}}</span>
+                </div>
+                <div>
+                    <label>出版社:</label>
+                    <span>{{detail.publisherName}}</span>
+                </div>
+                <div>
+                    <label>出版时间:</label>
+                    <span>{{detail.publishDate}}</span>
+                </div>
+                <div>
+                    <label>库存数量:</label>
+                    <span>{{detail.amount}}/{{detail.number}}本</span>
+                </div>
+            </div>
+            <div class="detail-JJ">
+                <h3>简介</h3>
+                <p>{{detail.Introduce}}</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="detail-cart">
+        <div class="detail-cart-left">
+            <img src="images/bookcase.png" alt=""/>
+            <span ng-click="goCart()">借书架</span>
+        </div>
+        <div class="detail-cart-right">
+            <span ng-click="addBookShelf()">加入借书架</span>
+        </div>
+    </div>
+
+    <lwh-alert content="已成功添加该图书!" state="deleteState" onconfirm="afterConfirm()" oncancel="afterCancel()"></lwh-alert>
+    <lwh-alert content="库存没有该图书了!" state="logoutState"></lwh-alert>
+    <lwh-alert content="不能添加多次哦!" state="onlyState"></lwh-alert>
+</div>
